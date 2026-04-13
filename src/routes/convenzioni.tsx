@@ -138,7 +138,7 @@ function ConvenzioniPage() {
       <section className="py-12 md:py-20 px-5 md:px-[5vw]" style={{ background: "#f5f3f0" }}>
         <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#af2801", letterSpacing: "0.1em" }}>Le convenzioni 2026</p>
         <h2 className="text-[clamp(1.6rem,3vw,2.7rem)] font-bold tracking-tight mb-3" style={{ fontFamily: "'Newsreader',serif", color: "#1b1c1a" }}>
-          Quattro partner,<br /><em style={{ color: "#af2801" }}>quattro buone ragioni</em>
+          I nostri partner,<br /><em style={{ color: "#af2801" }}>cinque buone ragioni</em>
         </h2>
         <p className="text-sm md:text-base mb-8 md:mb-12 max-w-[560px]" style={{ color: "#5a413a", lineHeight: 1.7 }}>
           Enti e associazioni del Canavese selezionati perché i loro valori rispecchiano i nostri.
