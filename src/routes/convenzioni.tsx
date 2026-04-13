@@ -20,9 +20,9 @@ const cards = [
   {
     name: "CSEN",
     tagline: "Centro Sportivo Educativo Nazionale",
-    logoUrl: "https://www.csen.it/images/logo/csen-logo.svg",
+    logoUrl: "/assets/logo-csen.svg",
     vantaggio: "Agevolazioni per visite mediche sportive",
-    desc: "Il CSEN è da decenni il punto di riferimento per chi pratica sport in modo consapevole e inclusivo. Grazie alla nostra convenzione, i soci ProXimaMenTe accedono a <strong>visite medico-sportive a costo ridotto</strong>.",
+    desc: "La nostra associazione fa parte del circuito <strong>CSEN Piemonte</strong>. Ente di promozione sportiva che negli anni si è distinta anche per impegno sociale. Tutti i nostri soci sono tesserati CSEN e possono usufruire delle convenzioni CSEN Nazionale. In particolare, in Piemonte ci sono alcuni <strong>centri di medicina sportiva convenzionata</strong>.",
     tag: "Benessere · dal nostro Manifesto",
     tagVariant: "coral",
     vantaggioVariant: "coral",
@@ -32,7 +32,7 @@ const cards = [
   {
     name: "Velodromo Francone",
     tagline: "Sport e territorio nel Canavese",
-    logoUrl: "https://www.velodromofrancone.it/wp-content/uploads/thegem-logos/logo_d9d0315e5a2b13596b656c8c80b47df8_1x.png",
+    logoUrl: "/assets/logo-velodromo.png",
     vantaggio: "1 ingresso in pista omaggio + 20% di sconto sui singoli ingressi",
     desc: "Il Velodromo Francone è uno spazio sportivo aperto a tutte e tutti. Crediamo nello <strong>sport come strumento di coesione sociale</strong>.",
     tag: "Benessere & Gioia · dal nostro Manifesto",
@@ -44,7 +44,7 @@ const cards = [
   {
     name: "Deep Experience ASD",
     tagline: "Outdoor, natura e avventura",
-    logoUrl: "https://deepexperience.it/wp-content/uploads/2023/10/logo-def_NEW.png",
+    logoUrl: "/assets/logo-deepexperience.png",
     vantaggio: "Agevolazioni su experience outdoor nel Canavese",
     desc: "Deep Experience ASD trasforma il territorio canavesano in un'aula a cielo aperto. <strong>Vivere la natura è un atto politico</strong> di cura del patrimonio comune.",
     tag: "Natura & Benessere · dal nostro Manifesto",
@@ -56,7 +56,7 @@ const cards = [
   {
     name: "Vinileria",
     tagline: "Wine & Records · Rivarolo Canavese",
-    logoUrl: "https://www.vinileriarivarolo.com/wp-content/uploads/2020/05/logo-trasparente-1024x1024.png",
+    logoUrl: "/assets/logo-vinileria.png",
     logoDark: true,
     vantaggio: "20% di sconto sui piatti alla carta ogni martedì (esclusi bevande e menù degustazione)",
     desc: "Un locale fresco e inclusivo, dove gustare vini di qualità, partecipare a degustazioni e scoprire vinili selezionati. Un luogo che ci ha visti crescere e che continua a sostenerci con passione. La musica è dialogo senza parole, è memoria condivisa, è <strong>gioia collettiva</strong>.",
@@ -69,9 +69,9 @@ const cards = [
   {
     name: "AIDO San Francesco al Campo",
     tagline: "Patto d'Amicizia · Donazione organi",
-    logoUrl: "",
+    logoUrl: "/assets/Logo_AidoSFAC_02.png",
     vantaggio: "Informazioni e schede per diventare donatore ai nostri eventi",
-    desc: "Ai nostri eventi, chiedici informazioni o le schede per diventare donatore. Un piccolo gesto che può fare una <strong>grande differenza</strong>. Il patto d'amicizia con AIDO San Francesco al Campo rappresenta il nostro impegno concreto per la solidarietà e l'umanità.",
+    desc: "AIDO promuove la <strong>donazione di organi</strong>. Ai nostri eventi, chiedici informazioni o le schede per diventare donatore. Un piccolo gesto che può fare una <strong>grande differenza</strong>. Il patto d'amicizia con AIDO San Francesco al Campo rappresenta il nostro impegno concreto per la solidarietà e l'umanità.",
     tag: "Umanità & Energia · dal nostro Manifesto",
     tagVariant: "coral",
     vantaggioVariant: "coral",
