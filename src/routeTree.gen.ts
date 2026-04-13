@@ -9,8 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ManifestoRouteImport } from './routes/manifesto'
+import { Route as ConvenzioniRouteImport } from './routes/convenzioni'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ManifestoRoute = ManifestoRouteImport.update({
+  id: '/manifesto',
+  path: '/manifesto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConvenzioniRoute = ConvenzioniRouteImport.update({
+  id: '/convenzioni',
+  path: '/convenzioni',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +31,50 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/convenzioni': typeof ConvenzioniRoute
+  '/manifesto': typeof ManifestoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/convenzioni': typeof ConvenzioniRoute
+  '/manifesto': typeof ManifestoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/convenzioni': typeof ConvenzioniRoute
+  '/manifesto': typeof ManifestoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/convenzioni' | '/manifesto'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/convenzioni' | '/manifesto'
+  id: '__root__' | '/' | '/convenzioni' | '/manifesto'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ConvenzioniRoute: typeof ConvenzioniRoute
+  ManifestoRoute: typeof ManifestoRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/manifesto': {
+      id: '/manifesto'
+      path: '/manifesto'
+      fullPath: '/manifesto'
+      preLoaderRoute: typeof ManifestoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/convenzioni': {
+      id: '/convenzioni'
+      path: '/convenzioni'
+      fullPath: '/convenzioni'
+      preLoaderRoute: typeof ConvenzioniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +87,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ConvenzioniRoute: ConvenzioniRoute,
+  ManifestoRoute: ManifestoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
