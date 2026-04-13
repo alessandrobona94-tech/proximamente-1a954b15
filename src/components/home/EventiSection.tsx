@@ -1,7 +1,7 @@
 import { ScrollReveal } from "../ScrollReveal";
 
 const nextEvent = {
-  img: "locandina-inchiostro-2.png",
+  img: "LOCANDINA_inchiostro_ribelle.png",
   alt: "Inchiostro Ribelle",
 };
 
