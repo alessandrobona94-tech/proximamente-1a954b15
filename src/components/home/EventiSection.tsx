@@ -1,13 +1,13 @@
 import { ScrollReveal } from "../ScrollReveal";
 
 const nextEvent = {
-  img: "locandina-inchiostro-2.png",
+  img: "LOCANDINA_inchiostro_ribelle.png",
   alt: "Inchiostro Ribelle",
 };
 
 const archiveEvents = [
   { img: "locandina-umanita-sospesa.png", alt: "Umanità Sospesa", date: "26 Giugno 2025 · Castellamonte", title: "Umanità Sospesa", desc: "Convegno con MSF. Ex Scaricatore, Piazza Generale Romano." },
-  { img: "foto-convegno.jpg", alt: "La felicità è un atto politico", date: "30 Ottobre 2025 · Valperga", title: "La felicità è un atto politico · Giulia Blasi", desc: "Incontro con Giulia Blasi sulla felicità come atto politico." },
+  { img: "locandina-inchiostro-2.png", alt: "La felicità è un atto politico", date: "30 Ottobre 2025 · Valperga", title: "La felicità è un atto politico · Giulia Blasi", desc: "Incontro con Giulia Blasi sulla felicità come atto politico." },
   { img: "locandina-rigenerazioni.jpg", alt: "RigenerAzioni", date: "22 Novembre 2025 · San Giorgio Canavese", title: "RigenerAzioni", desc: "Ri-generare gli spazi per il futuro. Teatro Belloc." },
   { img: "locandina-tesseramento-vinileria.png", alt: "Serata Tesseramento Vinileria", date: "16 Gennaio 2026 · Rivarolo", title: "Serata di Tesseramento · Vinileria", desc: "Vinyl Swap e tesseramento 2026. Via Farina 56." },
   { img: "locandina-donne-sotto-assedio.jpg", alt: "Donne Sotto Assedio", date: "13 Marzo 2026 · Rivarolo Canavese", title: "Donne Sotto Assedio", desc: "Con Martina Marchiò (MSF) e Roberta Lippi. Salone Comunale." },
