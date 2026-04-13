@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { StickyMobileCTA } from "../components/StickyMobileCTA";
-import { ScrollReveal } from "../components/ScrollReveal";
-import { HeroSection } from "../components/home/HeroSection";
-import { ChiSiamoSection } from "../components/home/ChiSiamoSection";
-import { CosaFacciamoSection } from "../components/home/CosaFacciamoSection";
-import { ManifestoTeaser } from "../components/home/ManifestoTeaser";
-import { EventiSection } from "../components/home/EventiSection";
-import { UniscitiSection } from "../components/home/UniscitiSection";
-import { NewsletterSection } from "../components/home/NewsletterSection";
-import { ContattiSection } from "../components/home/ContattiSection";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { StickyMobileCTA } from "@/components/StickyMobileCTA";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { HeroSection } from "@/components/home/HeroSection";
+import { ChiSiamoSection } from "@/components/home/ChiSiamoSection";
+import { CosaFacciamoSection } from "@/components/home/CosaFacciamoSection";
+import { ManifestoTeaser } from "@/components/home/ManifestoTeaser";
+import { EventiSection } from "@/components/home/EventiSection";
+import { UniscitiSection } from "@/components/home/UniscitiSection";
+import { NewsletterSection } from "@/components/home/NewsletterSection";
+import { ContattiSection } from "@/components/home/ContattiSection";
 
 export const Route = createFileRoute("/")({
   component: Index,
