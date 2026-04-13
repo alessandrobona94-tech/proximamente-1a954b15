@@ -1,4 +1,4 @@
-import { ScrollReveal } from "../ScrollReveal";
+import { ScrollReveal } from "../ScrollReveal"; // hero
 
 export function HeroSection() {
   return (
