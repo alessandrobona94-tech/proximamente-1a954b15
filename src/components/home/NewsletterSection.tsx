@@ -45,7 +45,7 @@ export function NewsletterSection() {
                 style={{ background: "white", color: "#E8502A" }}
               >
                 <span>Iscriviti</span>
-                <span className="material-symbols-outlined text-xl md:text-2xl">send</span>
+                <span className="material-symbols-outlined text-xl md:text-2xl" aria-hidden="true">send</span>
               </button>
             </div>
           </form>

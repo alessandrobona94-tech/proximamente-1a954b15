@@ -44,7 +44,7 @@ export function ChiSiamoSection() {
               </div>
               <div style={{ width: 1, height: 40, background: "rgba(175,40,1,0.15)" }} />
               <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold" style={{ color: "#af2801", fontFamily: "'Newsreader',serif" }}>15+</p>
+                <p className="text-3xl md:text-4xl font-bold" style={{ color: "#af2801", fontFamily: "'Newsreader',serif" }}>6+</p>
                 <p className="text-xs md:text-sm font-medium" style={{ color: "#5a413a" }}>Eventi realizzati</p>
               </div>
               <div style={{ width: 1, height: 40, background: "rgba(175,40,1,0.15)" }} />

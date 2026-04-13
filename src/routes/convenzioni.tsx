@@ -58,13 +58,25 @@ const cards = [
     tagline: "Wine & Records · Rivarolo Canavese",
     logoUrl: "https://www.vinileriarivarolo.com/wp-content/uploads/2020/05/logo-trasparente-1024x1024.png",
     logoDark: true,
-    vantaggio: "Sconti esclusivi su eventi dedicati",
-    desc: "La musica è dialogo senza parole, è memoria condivisa, è <strong>gioia collettiva</strong>. La Vinileria di Rivarolo è uno spazio dove vino e vinile si incontrano.",
+    vantaggio: "20% di sconto sui piatti alla carta ogni martedì (esclusi bevande e menù degustazione)",
+    desc: "Un locale fresco e inclusivo, dove gustare vini di qualità, partecipare a degustazioni e scoprire vinili selezionati. Un luogo che ci ha visti crescere e che continua a sostenerci con passione. La musica è dialogo senza parole, è memoria condivisa, è <strong>gioia collettiva</strong>.",
     tag: "Gioia & Dialogo · dal nostro Manifesto",
     tagVariant: "amber",
     vantaggioVariant: "amber",
     link: "https://www.vinileriarivarolo.com/",
     linkText: "Visita il sito della Vinileria",
+  },
+  {
+    name: "AIDO San Francesco al Campo",
+    tagline: "Patto d'Amicizia · Donazione organi",
+    logoUrl: "",
+    vantaggio: "Informazioni e schede per diventare donatore ai nostri eventi",
+    desc: "Ai nostri eventi, chiedici informazioni o le schede per diventare donatore. Un piccolo gesto che può fare una <strong>grande differenza</strong>. Il patto d'amicizia con AIDO San Francesco al Campo rappresenta il nostro impegno concreto per la solidarietà e l'umanità.",
+    tag: "Umanità & Energia · dal nostro Manifesto",
+    tagVariant: "coral",
+    vantaggioVariant: "coral",
+    link: "https://www.aido.it/",
+    linkText: "Scopri di più su AIDO",
   },
 ];
 
@@ -126,7 +138,7 @@ function ConvenzioniPage() {
       <section className="py-12 md:py-20 px-5 md:px-[5vw]" style={{ background: "#f5f3f0" }}>
         <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#af2801", letterSpacing: "0.1em" }}>Le convenzioni 2026</p>
         <h2 className="text-[clamp(1.6rem,3vw,2.7rem)] font-bold tracking-tight mb-3" style={{ fontFamily: "'Newsreader',serif", color: "#1b1c1a" }}>
-          Quattro partner,<br /><em style={{ color: "#af2801" }}>quattro buone ragioni</em>
+          I nostri partner,<br /><em style={{ color: "#af2801" }}>cinque buone ragioni</em>
         </h2>
         <p className="text-sm md:text-base mb-8 md:mb-12 max-w-[560px]" style={{ color: "#5a413a", lineHeight: 1.7 }}>
           Enti e associazioni del Canavese selezionati perché i loro valori rispecchiano i nostri.
