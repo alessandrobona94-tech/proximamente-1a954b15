@@ -1,21 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Be+Vietnam+Pro:wght@100;300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300;1,9..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 
 @custom-variant dark (&:is(.dark *));
-
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -23,8 +11,6 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -44,100 +30,170 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-coral: var(--coral);
+  --color-coral-light: var(--coral-light);
+  --color-coral-pale: var(--coral-pale);
+  --color-amber-brand: var(--amber-brand);
+  --color-amber-pale: var(--amber-pale);
+  --color-surface: var(--surface);
+  --color-surface-low: var(--surface-low);
+  --color-surface-container: var(--surface-container);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-brand-coral: var(--brand-coral);
+  --font-headline: 'Newsreader', serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 1rem;
+  --background: oklch(0.985 0.002 80);
+  --foreground: oklch(0.17 0.02 80);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.17 0.02 80);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.17 0.02 80);
+  --primary: oklch(0.40 0.14 25);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.50 0.10 70);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.95 0.005 80);
+  --muted-foreground: oklch(0.45 0.04 50);
+  --accent: oklch(0.95 0.005 80);
+  --accent-foreground: oklch(0.17 0.02 80);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
-}
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.90 0.01 80 / 60%);
+  --input: oklch(0.90 0.01 80);
+  --ring: oklch(0.40 0.14 25);
 
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  /* Brand tokens */
+  --coral: #af2801;
+  --coral-light: #F5856A;
+  --coral-pale: #ffdad2;
+  --amber-brand: #fdb332;
+  --amber-pale: #ffddb1;
+  --surface: #fbf9f6;
+  --surface-low: #f5f3f0;
+  --surface-container: #efeeeb;
+  --on-surface: #1b1c1a;
+  --on-surface-variant: #5a413a;
+  --brand-coral: #E8502A;
 }
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', serif;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+/* ── Animations ── */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes blobPulse {
+  0%, 100% { transform: scale(1) translate(0,0); }
+  33% { transform: scale(1.05) translate(10px,-8px); }
+  66% { transform: scale(0.97) translate(-8px,6px); }
+}
+@keyframes pulseCta {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(175,40,1,0.3); }
+  50% { box-shadow: 0 0 0 10px rgba(175,40,1,0); }
+}
+
+.anim-fade {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.anim-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-title-anim { animation: slideInLeft 0.8s ease both; }
+.hero-subtitle-anim { animation: fadeSlideIn 0.8s 0.3s ease both; }
+.hero-btns-anim { animation: fadeSlideIn 0.8s 0.5s ease both; }
+.hero-images-anim { animation: slideInRight 0.8s 0.2s ease both; }
+
+.organic-blob {
+  position: absolute;
+  filter: blur(60px);
+  z-index: -1;
+  opacity: 0.4;
+  animation: blobPulse 8s ease-in-out infinite;
+}
+.organic-blob:nth-child(2) { animation-delay: -4s; }
+
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(175,40,1,0.10);
+}
+
+.pulse-cta { animation: pulseCta 2.5s infinite; }
+
+/* ── Sticky mobile CTA ── */
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  padding: 0.75rem 1.25rem;
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(251,249,246,0.96);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(175,40,1,0.1);
+}
+@media (min-width: 769px) {
+  .sticky-mobile-cta { display: none; }
+}
+
+/* ── Manifesto parola blocks ── */
+.parola-block {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 3rem;
+  max-width: 900px;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(26,18,8,0.10);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.5s ease;
+}
+.parola-block.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 640px) {
+  .parola-block {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 }
