@@ -20,25 +20,26 @@ export function NewsletterSection() {
           <form
             className="w-full max-w-3xl flex flex-col gap-3 md:gap-0 md:flex-row md:items-stretch p-2 md:p-3 rounded-2xl md:rounded-full backdrop-blur-sm border"
             style={{ background: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.2)" }}
-            id="mailchimp-form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              // Newsletter form — calls Netlify function on the original site
-              alert("Newsletter subscription è gestita tramite Netlify Functions sul sito originale.");
-            }}
+            action="https://instagram.us20.list-manage.com/subscribe/post?u=dc663d3dcb9b8555c97b8631c&amp;id=6ff6ef2139&amp;f_id=00d1c3e1f0"
+            method="post"
+            target="_blank"
           >
             <div className="flex-grow relative">
               <input
-                className="w-full bg-transparent border-none focus:ring-0 focus:outline-none pl-5 md:pl-6 pr-4 md:pr-6 py-4 md:py-6 text-base md:text-xl rounded-full"
+                className="w-full bg-transparent border-none focus:ring-0 focus:outline-none pl-5 md:pl-6 pr-4 md:pr-6 py-4 md:py-6 text-base md:text-xl rounded-full placeholder:text-white/60"
                 style={{ color: "white" }}
                 placeholder="La tua email..."
                 required
                 type="email"
-                id="mc-email"
+                name="EMAIL"
+                id="mce-EMAIL"
               />
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-3 px-2 md:px-0">
-              <div className="h-captcha" data-sitekey="0fc257cc-314e-459e-8e78-a578158a143e" data-theme="dark" data-size="compact" />
+            {/* Honeypot anti-bot */}
+            <div aria-hidden="true" style={{ position: "absolute", left: "-5000px" }}>
+              <input type="text" name="b_dc663d3dcb9b8555c97b8631c_6ff6ef2139" tabIndex={-1} defaultValue="" />
+            </div>
+            <div className="flex items-center px-2 md:px-0">
               <button
                 className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-6 rounded-full font-bold text-base md:text-xl transition-all duration-300 shadow-xl flex items-center justify-center gap-3 active:scale-95 min-h-[44px]"
                 type="submit"
