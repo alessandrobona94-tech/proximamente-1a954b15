@@ -8,10 +8,13 @@ export const Route = createFileRoute("/manifesto")({
   component: ManifestoPage,
   head: () => ({
     meta: [
-      { title: "Il Manifesto – Proximamente APS" },
-      { name: "description", content: "Il manifesto di Proximamente APS: 10 parole chiave per un progetto di cittadinanza attiva nel Canavese." },
-      { property: "og:title", content: "Manifesto di ProximaMente – Agire per una Cittadinanza Attiva" },
+      { title: "Il Manifesto – ProXimaMenTe APS" },
+      { name: "description", content: "Il manifesto di Proximamente APS: 10 parole chiave per un progetto di cittadinanza attiva nel Canavese. Energia, Memoria, Dialogo e molto altro." },
+      { property: "og:title", content: "Il Manifesto – ProXimaMenTe APS" },
       { property: "og:description", content: "10 parole per il cambiamento: Energia, Memoria, Antifascismo, Dialogo, Umanità, Natura, Benessere, Politica, Gioia, Femminismo." },
+    ],
+    links: [
+      { rel: "canonical", href: "https://proximamente.lovable.app/manifesto" },
     ],
   }),
 });

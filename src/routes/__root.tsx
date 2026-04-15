@@ -31,16 +31,19 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "robots", content: "index, follow" },
       { title: "ProXimaMenTe APS | Cittadinanza Attiva" },
-      { name: "description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese." },
+      { name: "description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere nel Canavese." },
       { name: "author", content: "Proximamente APS" },
       { property: "og:title", content: "ProXimaMenTe APS | Cittadinanza Attiva" },
-      { property: "og:description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese." },
+      { property: "og:description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere nel Canavese." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:url", content: "https://proximamente.lovable.app/" },
+      { property: "og:locale", content: "it_IT" },
+      { property: "og:site_name", content: "ProXimaMenTe APS" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "ProXimaMenTe APS | Cittadinanza Attiva" },
-      { name: "twitter:description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese." },
+      { name: "twitter:description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere nel Canavese." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3Aiwai5xOXYSlYOpmpXuwKI8SX93/social-images/social-1776098957439-LOGO_Proximamente.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3Aiwai5xOXYSlYOpmpXuwKI8SX93/social-images/social-1776098957439-LOGO_Proximamente.webp" },
     ],
@@ -75,7 +78,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="it">
       <head>
         <HeadContent />
       </head>

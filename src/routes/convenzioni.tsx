@@ -9,9 +9,12 @@ export const Route = createFileRoute("/convenzioni")({
   head: () => ({
     meta: [
       { title: "Convenzioni 2026 – ProXimaMenTe APS" },
-      { name: "description", content: "I vantaggi esclusivi della tessera ProXimaMenTe 2026: CSEN, Velodromo Francone, Deep Experience e Vinileria. Sport, natura, cultura e benessere nel Canavese." },
+      { name: "description", content: "I vantaggi esclusivi della tessera ProXimaMenTe 2026: CSEN, Velodromo Francone, Deep Experience, Vinileria e AIDO. Sport, natura, cultura e benessere nel Canavese." },
       { property: "og:title", content: "Convenzioni 2026 – ProXimaMenTe APS" },
       { property: "og:description", content: "Scopri i vantaggi della tessera ProXimaMenTe: sport, natura, cultura e musica nel Canavese." },
+    ],
+    links: [
+      { rel: "canonical", href: "https://proximamente.lovable.app/convenzioni" },
     ],
   }),
 });
