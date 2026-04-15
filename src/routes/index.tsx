@@ -16,12 +16,15 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "ProXimaMenTe APS | Cittadinanza Attiva" },
+      { title: "ProXimaMenTe APS | Cittadinanza Attiva a Rivarolo Canavese" },
       { name: "description", content: "Proximamente APS è un'associazione di promozione sociale a Rivarolo Canavese. Promuoviamo cittadinanza attiva tramite cultura, dialogo e benessere nel Canavese." },
-      { name: "keywords", content: "Proximamente APS, associazione Rivarolo Canavese, volontariato Canavese, cittadinanza attiva, cultura Canavese" },
-      { property: "og:title", content: "Proximamente APS – Cittadinanza Attiva nel Canavese" },
+      { name: "keywords", content: "Proximamente APS, associazione Rivarolo Canavese, volontariato Canavese, cittadinanza attiva, cultura Canavese, promozione sociale" },
+      { property: "og:title", content: "ProXimaMenTe APS – Cittadinanza Attiva nel Canavese" },
       { property: "og:description", content: "Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere per il Canavese." },
       { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://proximamente.lovable.app/" },
     ],
   }),
 });
