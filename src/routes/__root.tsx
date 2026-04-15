@@ -70,6 +70,29 @@ export const Route = createRootRoute({
         href: "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "ProXimaMenTe APS",
+          alternateName: "Proximamente APS",
+          url: "https://proximamente.lovable.app",
+          logo: "https://storage.googleapis.com/gpt-engineer-file-uploads/3Aiwai5xOXYSlYOpmpXuwKI8SX93/social-images/social-1776098957439-LOGO_Proximamente.webp",
+          description: "Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere nel Canavese.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Rivarolo Canavese",
+            addressRegion: "Piemonte",
+            addressCountry: "IT",
+          },
+          sameAs: [
+            "https://www.instagram.com/proximamente_aps/",
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
