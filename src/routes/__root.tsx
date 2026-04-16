@@ -108,6 +108,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script type="text/javascript" src="https://embeds.iubenda.com/widgets/9d0d13f0-312f-4b56-b49d-fb3fb66ac462.js" async></script>
       </body>
     </html>
   );
