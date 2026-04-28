@@ -1,8 +1,8 @@
 import { ScrollReveal } from "../ScrollReveal";
 
 const nextEvent = {
-  img: "LOCANDINA_inchiostro_ribelle.png",
-  alt: "Inchiostro Ribelle",
+  img: "locandina-resistenza-terrorismo.png",
+  alt: "Resistenza e terrorismo - Presentazione libro di Eric Gobetti",
 };
 
 const archiveEvents = [
@@ -12,6 +12,7 @@ const archiveEvents = [
   { img: "locandina-tesseramento-vinileria.png", alt: "Serata Tesseramento Vinileria", date: "16 Gennaio 2026 · Rivarolo", title: "Serata di Tesseramento · Vinileria", desc: "Vinyl Swap e tesseramento 2026. Via Farina 56." },
   { img: "locandina-donne-sotto-assedio.jpg", alt: "Donne Sotto Assedio", date: "13 Marzo 2026 · Rivarolo Canavese", title: "Donne Sotto Assedio", desc: "Con Martina Marchiò (MSF) e Roberta Lippi. Salone Comunale." },
   { img: "locandina-swap-party.jpg", alt: "Swap Party e donazione Sermig", date: "21 Marzo 2026 · Bairo", title: "Swap Party · Donazione Sermig", desc: "No fast fashion: scambia i tuoi capi, aperitivo con i vini di San Firmino." },
+  { img: "LOCANDINA_inchiostro_ribelle.png", alt: "Inchiostro Ribelle", date: "Aprile 2026 · Rivarolo Canavese", title: "Inchiostro Ribelle", desc: "Rassegna di scrittura e parola ribelle." },
 ];
 
 export function EventiSection() {
