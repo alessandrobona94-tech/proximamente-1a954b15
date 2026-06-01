@@ -1,8 +1,8 @@
 import { ScrollReveal } from "../ScrollReveal";
 
 const nextEvent = {
-  img: "locandina-resistenza-terrorismo.png",
-  alt: "Resistenza e terrorismo - Presentazione libro di Eric Gobetti",
+  img: "locandina-verde-quotidiano.png",
+  alt: "Verde Quotidiano - Ripensare la natura, dal balcone alla città",
 };
 
 const archiveEvents = [
@@ -13,6 +13,7 @@ const archiveEvents = [
   { img: "locandina-donne-sotto-assedio.jpg", alt: "Donne Sotto Assedio", date: "13 Marzo 2026 · Rivarolo Canavese", title: "Donne Sotto Assedio", desc: "Con Martina Marchiò (MSF) e Roberta Lippi. Salone Comunale." },
   { img: "locandina-swap-party.jpg", alt: "Swap Party e donazione Sermig", date: "21 Marzo 2026 · Bairo", title: "Swap Party · Donazione Sermig", desc: "No fast fashion: scambia i tuoi capi, aperitivo con i vini di San Firmino." },
   { img: "LOCANDINA_inchiostro_ribelle.png", alt: "Inchiostro Ribelle", date: "Aprile 2026 · Rivarolo Canavese", title: "Inchiostro Ribelle", desc: "Rassegna di scrittura e parola ribelle." },
+  { img: "locandina-resistenza-terrorismo.png", alt: "Resistenza e terrorismo - Eric Gobetti", date: "14 Maggio 2026 · Rivarolo Canavese", title: "Resistenza e terrorismo · Eric Gobetti", desc: "Presentazione del libro con lo storico Eric Gobetti." },
 ];
 
 export function EventiSection() {
