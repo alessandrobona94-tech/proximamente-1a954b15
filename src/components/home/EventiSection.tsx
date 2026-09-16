@@ -1,13 +1,5 @@
 import { ScrollReveal } from "../ScrollReveal";
 
-const nextEvent = {
-  img: "locandina-verde-quotidiano.png",
-  alt: "Verde Quotidiano - Ripensare la natura, dal balcone alla città",
-  date: "5 Giugno 2026 · Rivarolo Canavese",
-  title: "Verde Quotidiano",
-  desc: "Ripensare la natura, dal balcone alla città.",
-};
-
 const archiveEvents = [
   { img: "locandina-umanita-sospesa.png", alt: "Umanità Sospesa", date: "26 Giugno 2025 · Castellamonte", title: "Umanità Sospesa", desc: "Convegno con MSF. Ex Scaricatore, Piazza Generale Romano." },
   { img: "locandina-inchiostro-2.png", alt: "La felicità è un atto politico", date: "30 Ottobre 2025 · Valperga", title: "La felicità è un atto politico · Giulia Blasi", desc: "Incontro con Giulia Blasi sulla felicità come atto politico." },
