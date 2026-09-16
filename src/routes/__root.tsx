@@ -32,6 +32,7 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "robots", content: "index, follow" },
+      { name: "google-site-verification", content: "VzSuX056evx9N9tEGQ47JaZkmZCzXbp9SjZeOnRfc54" },
       { title: "ProXimaMenTe APS | Cittadinanza Attiva" },
       { name: "description", content: "Proximamente APS – Associazione di promozione sociale a Rivarolo Canavese. Cultura, dialogo e benessere nel Canavese." },
       { name: "author", content: "Proximamente APS" },
