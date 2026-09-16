@@ -14,7 +14,7 @@ export const Route = createFileRoute("/convenzioni")({
       { property: "og:description", content: "Scopri i vantaggi della tessera ProXimaMenTe: sport, natura, cultura e musica nel Canavese." },
     ],
     links: [
-      { rel: "canonical", href: "https://proximamente.lovable.app/convenzioni" },
+      { rel: "canonical", href: "https://proximamenteaps.it/convenzioni" },
     ],
   }),
 });
