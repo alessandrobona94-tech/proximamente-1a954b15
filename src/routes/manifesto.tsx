@@ -14,7 +14,7 @@ export const Route = createFileRoute("/manifesto")({
       { property: "og:description", content: "10 parole per il cambiamento: Energia, Memoria, Antifascismo, Dialogo, Umanità, Natura, Benessere, Politica, Gioia, Femminismo." },
     ],
     links: [
-      { rel: "canonical", href: "https://proximamente.lovable.app/manifesto" },
+      { rel: "canonical", href: "https://proximamenteaps.it/manifesto" },
     ],
   }),
 });

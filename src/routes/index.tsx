@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "canonical", href: "https://proximamente.lovable.app/" },
+      { rel: "canonical", href: "https://proximamenteaps.it/" },
     ],
   }),
 });
