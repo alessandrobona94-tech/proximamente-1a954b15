@@ -43,13 +43,13 @@ export function EventiSection() {
           </div>
 
           <div className="max-w-[400px]">
-            <a href={`/assets/${nextEvent.img}`} target="_blank" rel="noopener noreferrer" className="block">
-              <div className="rounded-2xl overflow-hidden shadow-lg card-lift cursor-pointer" style={{ border: "1px solid rgba(175,40,1,0.08)" }}>
-                <div className="overflow-hidden" style={{ height: "clamp(200px, 40vw, 400px)" }}>
-                  <img src={`/assets/${nextEvent.img}`} alt={nextEvent.alt} className="w-full h-full object-cover object-top block" />
-                </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "1px solid rgba(175,40,1,0.08)" }}>
+              <div className="flex flex-col items-center justify-center text-center px-6" style={{ height: "clamp(200px, 40vw, 400px)", background: "linear-gradient(135deg, #fff8f5 0%, #ffefe8 100%)" }}>
+                <span className="material-symbols-outlined text-5xl mb-4" style={{ color: "#af2801" }}>event_upcoming</span>
+                <p className="text-lg font-bold mb-1" style={{ fontFamily: "'Newsreader',serif", color: "#1b1c1a" }}>Novità in arrivo</p>
+                <p className="text-sm" style={{ color: "#5a413a" }}>Stiamo organizzando i prossimi appuntamenti.</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </ScrollReveal>
