@@ -1,10 +1,5 @@
 import { ScrollReveal } from "../ScrollReveal";
 
-const nextEvent = {
-  img: "locandina-verde-quotidiano.png",
-  alt: "Verde Quotidiano - Ripensare la natura, dal balcone alla città",
-};
-
 const archiveEvents = [
   { img: "locandina-umanita-sospesa.png", alt: "Umanità Sospesa", date: "26 Giugno 2025 · Castellamonte", title: "Umanità Sospesa", desc: "Convegno con MSF. Ex Scaricatore, Piazza Generale Romano." },
   { img: "locandina-inchiostro-2.png", alt: "La felicità è un atto politico", date: "30 Ottobre 2025 · Valperga", title: "La felicità è un atto politico · Giulia Blasi", desc: "Incontro con Giulia Blasi sulla felicità come atto politico." },
@@ -14,6 +9,7 @@ const archiveEvents = [
   { img: "locandina-swap-party.jpg", alt: "Swap Party e donazione Sermig", date: "21 Marzo 2026 · Bairo", title: "Swap Party · Donazione Sermig", desc: "No fast fashion: scambia i tuoi capi, aperitivo con i vini di San Firmino." },
   { img: "LOCANDINA_inchiostro_ribelle.png", alt: "Inchiostro Ribelle", date: "Aprile 2026 · Rivarolo Canavese", title: "Inchiostro Ribelle", desc: "Rassegna di scrittura e parola ribelle." },
   { img: "locandina-resistenza-terrorismo.png", alt: "Resistenza e terrorismo - Eric Gobetti", date: "14 Maggio 2026 · Rivarolo Canavese", title: "Resistenza e terrorismo · Eric Gobetti", desc: "Presentazione del libro con lo storico Eric Gobetti." },
+  { img: "locandina-verde-quotidiano.png", alt: "Verde Quotidiano - Ripensare la natura, dal balcone alla città", date: "5 Giugno 2026 · Rivarolo Canavese", title: "Verde Quotidiano", desc: "Ripensare la natura, dal balcone alla città." },
 ];
 
 export function EventiSection() {
@@ -39,13 +35,13 @@ export function EventiSection() {
           </div>
 
           <div className="max-w-[400px]">
-            <a href={`/assets/${nextEvent.img}`} target="_blank" rel="noopener noreferrer" className="block">
-              <div className="rounded-2xl overflow-hidden shadow-lg card-lift cursor-pointer" style={{ border: "1px solid rgba(175,40,1,0.08)" }}>
-                <div className="overflow-hidden" style={{ height: "clamp(200px, 40vw, 400px)" }}>
-                  <img src={`/assets/${nextEvent.img}`} alt={nextEvent.alt} className="w-full h-full object-cover object-top block" />
-                </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "1px solid rgba(175,40,1,0.08)" }}>
+              <div className="flex flex-col items-center justify-center text-center px-6" style={{ height: "clamp(200px, 40vw, 400px)", background: "linear-gradient(135deg, #fff8f5 0%, #ffefe8 100%)" }}>
+                <span className="material-symbols-outlined text-5xl mb-4" style={{ color: "#af2801" }}>event_upcoming</span>
+                <p className="text-lg font-bold mb-1" style={{ fontFamily: "'Newsreader',serif", color: "#1b1c1a" }}>Novità in arrivo</p>
+                <p className="text-sm" style={{ color: "#5a413a" }}>Stiamo organizzando i prossimi appuntamenti.</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </ScrollReveal>
