@@ -1,22 +1,51 @@
+# Pianificazione: dominio proprio e visibilità su Google
 
+## Obiettivo
+Collegare il dominio `proximamenteaps.it` (acquistato su Aruba) al sito Lovable e configurare tutto ciò che serve perché Google trovi e indicizzi il sito quando qualcuno cerca "Proxima" o "ProXimaMenTe APS".
 
-## Piano: Integrazione Mailchimp Newsletter
+## Cosa faremo
 
-### Modifica unica: `src/components/home/NewsletterSection.tsx`
+1. **Collegare il dominio `proximamenteaps.it` a Lovable**
+   - Verificare la configurazione DNS richiesta da Lovable.
+   - Fornirti i record DNS (A e TXT) da inserire nel pannello di Aruba.
+   - Attendere la propagazione e verificare che il dominio risulti "Active".
 
-Il form attuale mostra un `alert()` al submit. Lo trasformerò in un form che invia direttamente a Mailchimp.
+2. **Aggiornare tutti i riferimenti SEO al nuovo dominio**
+   - `public/robots.txt`: aggiornare il percorso della sitemap.
+   - `public/sitemap.xml`: sostituire `proximamente.lovable.app` con `proximamenteaps.it`.
+   - `src/routes/__root.tsx`: aggiornare `og:url`, JSON-LD Organization, logo e sameAs.
+   - `src/routes/index.tsx`: aggiornare il canonical URL.
+   - `src/routes/manifesto.tsx` e `src/routes/convenzioni.tsx`: aggiornare title, meta description, Open Graph e canonical.
 
-**Cosa cambia:**
+3. **Configurare Google Search Console**
+   - Collegare un account Google Search Console al progetto tramite il connettore Lovable.
+   - Verificare la proprietà `https://proximamenteaps.it/` (metodo meta tag).
+   - Aggiungere anche la proprietà `sc-domain:proximamenteaps.it` se utile per coprire eventuali sottodomini.
 
-1. Il `<form>` diventa un form HTML standard con `method="post"`, `action` puntato a Mailchimp, e `target="_blank"`
-2. L'input email riceve `name="EMAIL"` (richiesto da Mailchimp)
-3. Viene aggiunto un campo honeypot nascosto per anti-spam: `b_dc663d3dcb9b8555c97b8631c_6ff6ef2139`
-4. Rimosso il blocco hCaptcha (Mailchimp usa il suo sistema anti-bot)
-5. Il design visivo resta identico
+4. **Inviare la sitemap a Google**
+   - Inviare `https://proximamenteaps.it/sitemap.xml` dopo la verifica della proprietà.
 
-**Dati estratti dal codice embedded:**
-- Action: `https://instagram.us20.list-manage.com/subscribe/post?u=dc663d3dcb9b8555c97b8631c&id=6ff6ef2139&f_id=00d1c3e1f0`
-- Honeypot field name: `b_dc663d3dcb9b8555c97b8631c_6ff6ef2139`
+5. **Pubblicare il sito sul nuovo dominio**
+   - Pubblicare la versione aggiornata.
+   - Verificare che `https://proximamenteaps.it` risponda correttamente.
+   - Testare il reindirizzamento da `www.proximamenteaps.it` e dal vecchio URL Lovable, se previsto.
 
-**Comportamento:** al click su "Iscriviti", il browser invierà i dati a Mailchimp e aprirà la pagina di conferma in una nuova scheda.
+6. **Richiedere l'indicizzazione della homepage**
+   - Usare lo strumento "Controllo URL / Richiedi indicizzazione" in Search Console per la homepage.
 
+## Cosa serve da parte tua
+
+- Accesso al pannello DNS di Aruba per inserire i record che ti indicheremo.
+- Un account Google (gmail o Google Workspace) con cui gestire Search Console.
+- Conferma se vuoi che `www.proximamenteaps.it` sia il dominio principale o il dominio senza `www`.
+
+## Note tecniche
+
+- Lovable richiede tipicamente: record A per `@` e `www` verso l'IP fornito, più un record TXT `_lovable` per la verifica di proprietà.
+- Se Aruba utilizza un proxy tipo Cloudflare, useremo la modalità proxy compatibile.
+- Il sito usa TanStack Start con SSR attivo, quindi Google riceve HTML completo e indicizzabile.
+- Iubenda è già integrato per cookie/privacy; questo soddisfa il consenso GDPR a livello frontend.
+
+## Risultato atteso
+
+Dopo la pubblicazione, il sito sarà raggiungibile all'indirizzo `https://proximamenteaps.it`. Google lo scoprirà tramite sitemap e, dopo qualche giorno (tipicamente 3-14 giorni), inizierà a mostrarlo nei risultati per ricerche come "Proxima", "ProXimaMenTe APS", "associazione Rivarolo Canavese".
